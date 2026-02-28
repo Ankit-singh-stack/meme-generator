@@ -6,7 +6,7 @@ import AppRoutes from './routes';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/meme-generator"> {/* 👈 IMPORTANT */}
       <AuthProvider>
         <div className="min-h-screen flex flex-col">
           <AppRoutes />
